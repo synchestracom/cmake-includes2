@@ -15,6 +15,6 @@ if (MSVC)
     target_compile_options(SharedCode INTERFACE /Zc:__cplusplus)
 endif ()
 
-# C++23, please
+# C++20, please
 # Use cxx_std_23 for C++23 (as of CMake v 3.20)
-target_compile_features(SharedCode INTERFACE cxx_std_23)
+target_compile_features(SharedCode INTERFACE cxx_std_20)
